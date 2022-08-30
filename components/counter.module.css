@@ -1,0 +1,48 @@
+.align {
+  text-align: center;
+  width: 200px;
+  margin: 50px;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  border: 5px solid orange;
+  transition: all 1s;
+}
+.align:hover {
+  border: 5px solid blue;
+  transform: scale(1.1);
+  backface-visibility: hidden;
+}
+.align:hover .btn {
+  background-color: blue;
+}
+.header {
+  margin: 1px 10px;
+  color: #fff;
+}
+.align:hover .header {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.btn {
+  background-color: orange;
+  margin: 5px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+  animation: glow 1s ease-in-out infinite alternate;
+  transform: scale(1.1);
+}
+.btn_group {
+  padding: 10px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+      0 0 70px #e60073;
+  }
+}
